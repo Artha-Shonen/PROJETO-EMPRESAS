@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contato</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="/favicon-96x96.png" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon-96x96.png" type="image/x-icon">
 </head>
 <body>
     <nav>
@@ -29,22 +29,30 @@
 
     <section>
         <div id="div-form">
-            <form action="/contatos.php" method="get" target="_blank">
-                <label for="">Digite seu nome</label>
+            <form action="contatos.php" method="post" target="_blank">
+                <label for="">Digite seu nome: </label>
                 <input type="text" name="nome"> <br> <br>
-                <label for="">Digite seu email</label>
+
+                <label for="">Digite seu email: </label>
                 <input type="email" name="email"> <br> <br>
-                <label for="">Informe o motivo do contato</label> <br>
+                <label for="">Digite seu numero</label>
+                <input type="tel" name="telefone" pattern="">
+                <label for="">Selecione o motivo do contato</label>
                 <select name="tipo-contato" id=""> <br>s
                     <option value="Duvida">Duvida</option>
                     <option value="Reclamção">Reclamção</option>
                     <option value="Informação">Informação</option>
                 </select><br><br><br>
-                <input type="text" name="1" id=""><br> 
-                <label for="">num 1</label> <br>
-                <input type="text" name="2"> <br> <br>
+
+                <label for="">num 1</label> 
+                <input type="text" name="1" id=""><br><br>
+
                 <label for="">num 2</label>
-                <input type="submit" value="enviar"><br>
+                <input type="text" name="2"> 
+                <input type="submit" value="enviar">
+                <input type="reset" value="apagar."><br>
+                
+                
                 
 
             </form>

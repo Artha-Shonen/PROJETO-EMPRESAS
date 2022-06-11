@@ -1,11 +1,12 @@
 <?php
 
-$nome= $_GET['nome'];
-$email= $_GET["email"];
-$tipo= $_GET["tipo-contato"];
-$n1= $_GET["1"];
-$n2= $_GET["2"];
 
+
+$nome= $_POST['nome'];
+$email= $_POST["email"];
+$tipo= $_POST["tipo-contato"];
+$n1= $_POST["1"];
+$n2= $_POST["2"];
 
 echo $nome;
 echo "<br/>";
@@ -15,6 +16,11 @@ echo $tipo;
 echo $n1;
 echo "<br/>";
 echo $n2;
+
+
+
+
+
 
 /*echo $_POST["1"]+ $_POST["2"]; */
 /*echo 'meu nome é coutinho'; */
