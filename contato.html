@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contato</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sobre.css">
     <link rel="shortcut icon" href="favicon-96x96.png" type="image/x-icon">
 </head>
 <body>
@@ -27,36 +27,68 @@
         </ul>
     </nav>
 
-    <section>
+    <section id="secformulario">
         <div id="div-form">
-            <form action="contatos.php" method="post" target="_blank">
-                <label for="">Digite seu nome: </label>
-                <input type="text" name="nome"> <br> <br>
+            <div id="fundodoform">
+                <form action="contatos.php" method="post" target="_blank" id="formulario">
+                <label for="" class="texto-caixa" >Primeiro nome: </label>
+                <input type="text" name="nome" placeholder="Seu nome..."> 
+
+                <label for="">Segundo nome:</label>
+                <input type="text" name="sobrenome" class="caixa" placeholder="Seu sobrenome..."><br> <br>
+
+                <label for="">Digite seu numero</label>
+                <input type="tel" name="telefone" patt placeholder="(000)00000-0000">
+                <br><br>
 
                 <label for="">Digite seu email: </label>
-                <input type="email" name="email"> <br> <br>
-                <label for="">Digite seu numero</label>
-                <input type="tel" name="telefone" pattern="">
-                <label for="">Selecione o motivo do contato</label>
-                <select name="tipo-contato" id=""> <br>s
-                    <option value="Duvida">Duvida</option>
-                    <option value="Reclamção">Reclamção</option>
-                    <option value="Informação">Informação</option>
-                </select><br><br><br>
+                <input type="text" name="email" class="caixa" placeholder="exemplo@">
+                <select name="arrobas">
+                    <option value="@outlook.com">@outlook.com</option>
+                    <option value="@hotmail.com">@hotmail.com</option>
+                    <option value="@gmail.com">@gmail.com</option>
+                </select> <br> <br> 
+                
+                <label for="">Digite sua data de nascimento:</label>
+                <input type="date" name="data" class="caixa" required> <br> <br>
 
-                <label for="">num 1</label> 
-                <input type="text" name="1" id=""><br><br>
+                <label for="">informe a senha de segurança</label>
+                <input type="password" class="caixa" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Digite uma senha com no minimo 8 digitios e com caracter especial." name="senha" placeholder="Digite sua senha."> <br> <br>
+                
+                <label for="">Confirme sua senha.</label>
+                <input type="password" class="caixa" name="confirmasenha" placeholder="Repita a primeira senha.">
 
-                <label for="">num 2</label>
-                <input type="text" name="2"> 
                 <input type="submit" value="enviar">
-                <input type="reset" value="apagar."><br>
-                
-                
-                
-
-            </form>
+                                            
+                </form>
+            </div>    
         </div>
+
+       
     </section>
+    <footer>
+        
+        <div id="rodape">
+            <h2 id="tittulo-roda">Departamentos</h2>
+            <ul id="menu-roda">
+                <li>Pisos e Revestimentos</li>
+                <li>Banheiro</li>
+                <li>Cozinha</li>
+                <li>Eletrodomésticos</li>
+                <li>Eletroportáteis</li>
+                <li>Climatização</li>
+                <li>Material de construção</li>
+                <li>Tintas e acessórios</li>
+                <li>Materiais elétricos</li>
+                <li>Ferramentas</li>
+                <li>Ferragens</li>
+                <li>Materiais hidráulicos</li>
+                <li>Portas e Janelas</li>
+                <li>Jardim e lazer</li>
+                <li>Cama, Mesa e Banho</li>
+
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>

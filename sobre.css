@@ -6,6 +6,7 @@ nav{
     margin-right: auto;
     text-align: center;
     height: 150px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     
 }
 #menu{
@@ -38,16 +39,46 @@ li:hover{
     margin-left: 100px;
    
 }
-#obra{
-    margin: 0;
-    width: 1366px;
-    height: 500px;
+#secformulario{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
 }
-#cards{
-    padding: 20px;
-    border-radius: 5px;
+#div-form{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 10px;
     background-color: rgb(0%, 44%, 40%);
+    height: 350px;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+}
+input{
+    border-radius: 5px;
+}
+
+#rodape{
+    background-color: rgb(0%, 44%, 40%);
+    
     color: rgb(255, 255, 255);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    padding: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#menu-roda{
+    padding: 20px;
+    text-align: left;
+    display:grid;
+    margin-left: -50;
+}
+#tittulo-roda{
+    text-align: left;
+    margin-left: -10px;
+}
+/*#secformulario{
+    background-color: blue;
     margin-bottom: 25px;
     margin-top: 25px;
     margin-right: 350px;
@@ -55,39 +86,3 @@ li:hover{
     height:400px;
     text-align: center;
 }
-body{
-    margin: 0;
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
-    
-}
-#Video-YT{
-    margin-bottom: 25px;
-    margin-top: 25px;
-    margin-right: 350px;
-    margin-left: 350px;
-    height:500px;
-   
-}
-#rodape{
-    background-color: rgb(0%, 44%, 40%);
-    
-    color: rgb(255, 255, 255);
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    padding: 50px;
-}
-#menu-roda{
-    padding: 20px;
-    text-align: left;
-    display:grid;
-}
-
-input {
-    size: 50px;
-  }
-  
- #secformulario{
-    margin-top: 100px;
- }
